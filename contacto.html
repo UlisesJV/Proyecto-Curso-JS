@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/books.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="portada">
+            <h1>Libreria</h1>
+        </div>
+    </header>
+        <nav class="navbar">
+            <ul class="ulista">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="productos.html">Productos</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+                <li class="menu"><a href="reseñas.html">Reseñas</a></li>
+            </ul>
+        </nav>
+    <br><br>
+
+    <form class = "contacto" action="https://formspree.io/f/{form_id}" method="post">
+        <fieldset>
+            <legend><b>Información de Contacto</b></legend>
+            <br>
+            <label class = "texto-label" for="nombre">Tu nombre:</label>
+            <input class="info" name = "nombre" id = "nombre" type="text" size="22">
+            <br><br>
+            <label class = "texto-label" for="email">Tu Email:</label>
+            <input class="info" name="Email" id="email" type="email" size="20">
+           
+           <br><br>
+           <label class = "texto-label" for="mensaje">Mensaje:</label>
+           <textarea class="info" name="mensaje" id="mensaje" rows="8" cols="30">
+           </textarea>
+           <br><br>
+           <div class="enviar">
+            <button type="submit">Enviar</button>
+           </div>
+          
+        
+        </fieldset>
+        
+      </form>
+    <main>
+        
+    </main>
+    <br><br><br><br>
+    <footer>©2024</footer>
+    
+</body>
+</html>
