@@ -14,18 +14,15 @@ body {
 
 /* Header: portada */
 .portada {
-    margin: 1em .5em;
-    padding: 2.5em;
+
+    padding: 3.5em;
     display: flex;
     justify-content: center;
-    background-image: url(/Proyecto/img/papel-marron.jpg);
-    border: 2px solid white;
+    align-items: center;
+    background:radial-gradient(gray,5%,black);
 }
 
-.portada h1 {
-    font-size: 2em;
-    box-sizing: border-box;
-}
+
 
 /* Menú de navegación */
 
@@ -72,8 +69,8 @@ body {
 .merc {
     height: auto;
     display: grid;
-    gap: 2em;
-    margin: 2em 0;
+    gap: 3.5em;
+    margin: 5.5em 0;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
 }
@@ -183,12 +180,21 @@ footer {
 }
 
 /* Media queries */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .merc {
-        grid-template-columns: 1fr;
-        margin: 5em 0;
-        gap: 5em;
-        padding: 1em;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1.75em 1em;
+        gap: 1em;
+    }
+    .item{
+        justify-content: center;
+        height: 280px;
+        width: 80px;
+        font-size: 12px;
+    }
+    img{
+        height: 160px;
+        width: 110px;
     }
 
     .gracias {
@@ -207,6 +213,85 @@ footer {
     .menu a{
         padding: 1em .6em;
     }
+    .portada{
+        font-size: 2em;
+        padding: 2.5em;
+    }
+    .libro-de-portada{
+        height: 75px;
+        width: 75px;
+    }
 
+
+}
+
+@media only screen and (min-width: 650px){
+    .merc {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1em 0;
+        gap: 2em;
+        padding: 2em;
+    }
+    .item{
+        justify-content: center;
+        align-items: space-around;
+        height: 270px;
+        width: 80px;
+        font-size: 12px;
+    }
+    .item img{
+        height: 170px;
+        width: 110px;
+    }
+    .libro-de-portada{
+        height: 1px;
+        width: 1px;
+    }
+    .portada{
+        font-size: 2.5em;
+        padding: 2em;
+    }
+    .libro-de-portada{
+        height: 95px;
+        width: 100px;
+    }
+} 
+
+@media only screen and (min-width: 770px){
+    .merc {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2em 0;
+        gap: 2.5em;
+        padding: .5em;
+    }
+    .item{
+        justify-content: center;
+        height: 310px;
+        width: 120px;
+        font-size: .80em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px)
+{
+    .merc{
+        gap: 1.5em;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .item{
+        height: 350px;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .merc{
+        gap: 5em;
+        margin: 3.5em 0;
+        grid-template-columns: repeat(4,1fr);
+    }
+   
 
 }
