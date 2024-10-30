@@ -292,6 +292,17 @@ footer {
         margin: 3.5em 0;
         grid-template-columns: repeat(4,1fr);
     }
+    .item{
+        height: 400px;
+        justify-content: center;
+    }
+    .item img{
+        height: 250px;
+        width: 150px;
+    }
+    td{
+        padding: 1em;
+    }
    
 
 }
