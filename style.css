@@ -21,6 +21,9 @@ body {
     align-items: center;
     background:radial-gradient(gray,5%,black);
 }
+.portada h1{
+    font-family: "EB Garamond", serif;
+}
 
 
 
