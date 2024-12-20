@@ -91,6 +91,11 @@ nav .carrito i{
 
 
 /* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px){
+    .carrito{
+        padding: 0 5vw;
+    }
+}
 @media screen and (max-width: 1024px) {
     .nav {
         align-items: center;
