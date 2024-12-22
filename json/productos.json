@@ -1,199 +1,247 @@
 [
-{
-    "imagen" : "https://insolenterevista.com/dracula-3/",
-    "titulo" : "Dracula",
-    "año de publicación" : "1897",
-    "autor" : "Bram Stoker",
-    "genero" : "Terror",
-    "descripcion" : "Esta novela gótica cuenta la historia del Conde Drácula, un vampiro de Transilvania que busca expandir su influencia trasladándose a Inglaterra. La narrativa, presentada a través de diarios, cartas y recortes de periódicos, sigue al joven abogado Jonathan Harker, quien visita el castillo de Drácula y descubre la verdadera naturaleza del Conde. A medida que Drácula comienza a acechar a Mina Murray, la prometida de Harker, y a Lucy Westenra, su amiga, un grupo liderado por el profesor Van Helsing se une para enfrentarlo. Es un clásico que explora temas de sexualidad, modernidad y el choque entre la ciencia y lo sobrenatural."
+    {
+        "id": 1,
+        "imagen": "https://insolenterevista.com/dracula-3/",
+        "titulo": "Dracula",
+        "año de publicación": "1897",
+        "autor": "Bram Stoker",
+        "genero": "Terror",
+        "descripcion": "Esta novela gótica cuenta la historia del Conde Drácula...",
+        "precio": 17500
+    },
+    {
+        "id": 2,
+        "imagen": "https://m.media-amazon.com/images/I/51ZMf0mLtnL.jpg",
+        "titulo": "El extraño caso del Dr. Jekyll y Mr. Hyde",
+        "año de publicación": "1886",
+        "autor": "Robert Louis Stevenson",
+        "genero": "Terror",
+        "descripcion": "Esta novela corta explora la dualidad del ser humano...",
+        "precio": 16000
+    },
+    {
+        "id": 3,
+        "imagen": "https://acdn.mitiendanube.com/stores/001/005/721/products/la-llamada-de-cthulhu1-afba421ba2ae4d7bf916345607641420-640-0.jpg",
+        "titulo": "La llamada de Cthulhu",
+        "año de publicación": "1926",
+        "autor": "H. P. Lovecraft",
+        "genero": "Terror",
+        "descripcion": "Escrito en 1926, este relato de horror cósmico...",
+        "precio": 18000
+    },
+    {
+        "id": 4,
+        "imagen": "https://www.upla.cl/noticias/wp-content/uploads/2018/01/20180113_frankenstein_amazon.png",
+        "titulo": "Frankenstein",
+        "año de publicación": "1818",
+        "autor": "Mary Shelley",
+        "genero": "Terror",
+        "descripcion": "Publicada en 1818, esta novela cuenta la historia de Victor Frankenstein...",
+        "precio": 15000
+    },
+    {
+        "id": 5,
+        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/fb/2b/fb2b2364b36a59aa300eaab6d377cf94.jpg",
+        "titulo": "El gato negro",
+        "año de publicación": "1843",
+        "autor": "Edgar Allan Poe",
+        "genero": "Terror",
+        "descripcion": "En este relato de 1843, el narrador, un hombre común...",
+        "precio": 19000
+    },
 
-},
-{
-    "imagen" : "https://m.media-amazon.com/images/I/51ZMf0mLtnL.jpg",
-    "titulo" : "El extraño caso del Dr. Jekyll y Mr. Hyde",
-    "año de publicación" : "1886",
-    "autor" : "Robert Louis Stevenson",
-    "genero" : "Terror",
-    "descripcion" : "Esta novela corta explora la dualidad del ser humano a través del personaje del Dr. Henry Jekyll, un respetado científico que desarrolla una poción para liberar su lado oscuro, dando vida a su alter ego, el violento y desalmado Mr. Edward Hyde. Hyde comete atroces crímenes, lo que lleva a Jekyll a enfrentarse a las consecuencias de sus experimentos. La obra, con tintes de horror psicológico, plantea preguntas sobre la moralidad, la identidad y los peligros de desatar las fuerzas reprimidas de la psique."
-},
-{
-    "imagen" : "https://acdn.mitiendanube.com/stores/001/005/721/products/la-llamada-de-cthulhu1-afba421ba2ae4d7bf916345607641420-640-0.jpg",
-    "titulo" : "La llamada de Cthulhu",
-    "año de publicación" : "1926",
-    "autor" : "H. P. Lovecraft",
-    "genero" : "Terror",
-    "descripcion" : "Escrito en 1926, este relato de horror cósmico sigue al narrador mientras investiga el culto al antiguo dios Cthulhu, una entidad que yace dormida bajo el océano en la ciudad sumergida de R'lyeh. A través de una serie de testimonios, diarios y pistas fragmentadas, se revela que Cthulhu y otras entidades cósmicas son seres de inmenso poder, completamente indiferentes a la humanidad. La historia es conocida por su atmósfera de misterio, la sensación de insignificancia del ser humano ante lo vasto del universo y el temor a lo desconocido."
-},
-{
-    "imagen" : "https://www.upla.cl/noticias/wp-content/uploads/2018/01/20180113_frankenstein_amazon.png",
-    "titulo" : "Frankenstein",
-    "año de publicación" : "1818",
-    "autor" : "Mary Shelley",
-    "genero" : "Terror",
-    "descripcion" : "Publicada en 1818, esta novela cuenta la historia de Victor Frankenstein, un joven científico que, obsesionado con los secretos de la vida, crea un ser animado a partir de partes de cadáveres. Su criatura, inicialmente inocente, se convierte en un ser atormentado y vengativo debido al rechazo y la soledad. La obra aborda temas como la ética científica, la responsabilidad moral del creador hacia su creación y las consecuencias del aislamiento. Es una reflexión sobre la humanidad, el progreso y los peligros de jugar a ser Dios."
-
-},
-{
-    "imagen" : "https://images.cdn1.buscalibre.com/fit-in/360x360/fb/2b/fb2b2364b36a59aa300eaab6d377cf94.jpg",
-    "titulo" : "El gato negro",
-    "año de publicación" : "1843",
-    "autor" : "Edgar Allan Poe",
-    "genero" : "Terror",
-    "descripcion" : "En este relato de 1843, el narrador, un hombre común que se entrega al alcohol y la violencia, narra los eventos que lo llevaron a su condena. Después de abusar de su gato negro, Plutón, y finalmente matarlo, comienza a ser acosado por la culpa y por un segundo gato con características similares. La historia mezcla elementos de horror psicológico y lo sobrenatural, explorando la degradación moral, la locura y el remordimiento."
-
-},
-{
-    "imagen" : "https://images.cdn1.buscalibre.com/fit-in/360x360/df/ff/dfff4d35a1fea51905c2ca8766b091e9.jpg",
-    "titulo" : "Los crimenes de la Calle Morgue",
-    "año de publicación" : "1841",
-    "autor" : "Edgar Allan Poe",
-    "genero" : "Terror",
-    "descripcion" : "Publicado en 1841, este cuento es considerado el precursor del género de detectives. Auguste Dupin, un hombre de gran intelecto y habilidades deductivas, investiga un brutal asesinato de dos mujeres en París. El misterio rodea la naturaleza del crimen, ya que las puertas estaban cerradas desde dentro y los testigos no coinciden en sus testimonios. Dupin desentraña el enigma utilizando un método lógico y deductivo que más tarde inspiraría a personajes como Sherlock Holmes. La obra mezcla intriga, violencia y una resolución sorprendente."
-},
-{
-    "imagen" : "https://cdn.agapea.com/Ediciones-Jaguar/EL-HOMBRE-LOBO-DE-PARIS-i1n176513.jpg",
-    "titulo" : "Un hombre lobo en Paris",
-    "año de publicación" : "1933",
-    "autor" : "Guy Endore",
-    "genero" : "Terror",
-    "descripcion" : "Publicada en 1933, esta novela mezcla historia, filosofía y terror gótico. Relata la vida de Bertrand Caillet, un hombre que descubre que es un hombre lobo y lucha contra su naturaleza violenta. Ambientada en la Francia del siglo XIX, la historia aborda cuestiones de identidad, redención y la lucha entre el bien y el mal. También es una crítica social y política que examina la monstruosidad tanto en lo humano como en lo sobrenatural."
-},
-{
-    "imagen" : "https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/6254530f4ed610669fcec2a6_60463d34a41e5e5d28298af9_9788418395024_Carmilla_ClC3A1sicos20Ilustrados_COVER.jpeg",
-    "titulo" : "Carmilla",
-    "año de publicación" : "1872",
-    "autor" : "Sheridan Le Fanu",
-    "genero" : "Terror",
-    "descripcion" : "Escrita en 1872, esta novela corta cuenta la historia de Laura, una joven que vive en un castillo aislado con su padre. La llegada de Carmilla, una mujer misteriosa y encantadora, desencadena una serie de eventos extraños, incluidas enfermedades inexplicables y muertes en el área. Carmilla desarrolla una relación íntima con Laura, lo que sugiere un subtexto de atracción homoerótica. Finalmente, se revela que Carmilla es una vampira que ha vivido siglos alimentándose de jóvenes. Es una de las primeras historias de vampiros que influyó en obras posteriores, incluido Drácula."
-},
-{
-    "imagen" : "https://imgv2-1-f.scribdassets.com/img/word_document/482560205/original/216x287/83ce571df6/1668843116?v=1",
-    "titulo" : "La maquina del tiempo",
-    "año de publicación" : "1895",
-    "autor" : "H. G. Wells",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "Esta novela de ciencia ficción publicada en 1895 narra las aventuras de un científico conocido como El Viajero del Tiempo, quien construye una máquina para explorar el futuro. Al llegar al año 802.701, descubre una sociedad dividida entre los Eloi, seres pacíficos y frágiles que habitan la superficie, y los Morlocks, criaturas subterráneas que los cazan. La obra reflexiona sobre la evolución social y los posibles destinos de la humanidad."
-},
-{
-    "imagen" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdxbxLSq-62YZRnQ0EoFWwQEy8oKGqK1D9bQ&s",
-    "titulo" : "Planilandia, una novela de muchas dimensiones",
-    "año de publicación" : "1884",
-    "autor" : "Edwin A.Abbott",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "Escrita en 1884, esta alegoría matemática y satírica presenta un mundo bidimensional habitado por figuras geométricas. A través de los ojos de un cuadrado, se exploran conceptos como dimensiones superiores e inferioridad social. La obra critica las jerarquías de la sociedad victoriana y ofrece una reflexión sobre cómo percibimos nuestra realidad."
-},
-{
-    "imagen" : "https://images.cdn1.buscalibre.com/fit-in/360x360/be/f5/bef58803f001add87e2f0c33ca9fa87f.jpg",
-    "titulo" : "Un yanqui en la corte del Rey Arturo",
-    "año de publicación" : "1889",
-    "autor" : "Mark Twain",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "Publicada en 1889, esta novela satírica cuenta la historia de Hank Morgan, un estadounidense del siglo XIX que, tras un golpe en la cabeza, despierta en la Inglaterra medieval. Con sus conocimientos modernos, intenta reformar la sociedad feudal de la época, enfrentándose a la superstición y al poder de la Iglesia. Twain utiliza el humor y el absurdo para criticar tanto las instituciones medievales como las contemporáneas."
-},
-{
-    "imagen" : "https://www.curriculumnacional.cl/614/articles-86177_thumbnail.thumb_iNormal.jpg",
-    "titulo" : "Los primeros hombres en la luna",
-    "año de publicación" : "1901",
-    "autor" : "H. G. Wells",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "En esta novela de 1901, el empresario Bedford y el científico Cavor viajan a la Luna gracias a una sustancia antigravitatoria. Allí encuentran una civilización subterránea de insectoides llamados selenitas. La historia explora temas como la colonización, la naturaleza del contacto con otras especies y las diferencias culturales."
-},
-{
-    "imagen" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0p6HmxgK1M50wKpy5N6Ev1M95Dr9JKQW8w&s",
-    "titulo" : "La guerra de los mundos",
-    "año de publicación" : "1898",
-    "autor" : "H. G. Wells",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "Publicada en 1898, esta obra de ciencia ficción describe la invasión de la Tierra por parte de marcianos que utilizan máquinas avanzadas para devastar el planeta. A través de los ojos de un narrador anónimo, se revela la lucha desesperada de la humanidad por sobrevivir. Es una crítica a la colonización imperialista y una reflexión sobre la fragilidad de la civilización humana."
-},
-{
-    "imagen" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRun57e7VhQ3r1uSQuVBRSmd5JM90y_acABzg&s",
-    "titulo" : "20.000 leguas de viaje submarino",
-    "año de publicación" : "1870",
-    "autor" : "Jules Verne",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "Publicada en 1870, esta novela sigue las aventuras del profesor Aronnax, su ayudante Conseil y el arponero Ned Land, quienes son capturados por el Capitán Nemo a bordo del submarino Nautilus. Viajan a través de los océanos, enfrentando criaturas marinas y explorando misterios submarinos, mientras descubren las motivaciones de Nemo, quien rechaza el mundo terrestre."
-
-},
-{
-    "imagen" : "https://sbslibreria.vtexassets.com/arquivos/ids/181435/9788494773471.jpg?v=636814437166930000",
-    "titulo" : "El hombre invisible",
-    "año de publicación" : "1897",
-    "autor" : "H. G. Wells",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "Publicada en 1897, esta novela relata la historia de Griffin, un científico que descubre cómo volverse invisible mediante un experimento. Sin embargo, su invisibilidad lo lleva al aislamiento, la paranoia y actos de crueldad, lo que resulta en su caída. La obra reflexiona sobre las consecuencias del poder y la falta de responsabilidad moral."
-},
-{
-    "imagen" : "https://www.eslocotidiano.com/media/eslocotidiano/images/2022/10/02/2022100208425510602.jpg",
-    "titulo" : "El alimento de los dioses y cómo vino a la Tierra",
-    "año de publicación" : "1904",
-    "autor" : "H. G. Wells",
-    "genero" : "Ciencia Ficción",
-    "descripcion" : "En esta obra de 1904, dos científicos desarrollan un alimento experimental que hace crecer de manera descomunal a los seres vivos. El experimento da lugar a gigantes humanos y animales, lo que desata conflictos entre estos seres y el resto de la humanidad. La novela explora temas de progreso científico, miedo al cambio y las tensiones sociales."
-},
-{
-    "imagen" : "https://images.cdn1.buscalibre.com/fit-in/360x360/54/53/545330cd89982cfb9f5336717f70ccb1.jpg",
-    "titulo" : "Peter Pan",
-    "año de publicación" : "1911",
-    "autor" : "J. M. Barrie",
-    "genero" : "Infantil",
-    "descripcion" : "Publicado en 1911, Peter Pan relata la historia de un niño que se niega a crecer y vive en el mágico País de Nunca Jamás, donde las aventuras nunca terminan. Peter, junto con su hada compañera Campanita, lleva a Wendy y sus hermanos, John y Michael, a su mundo lleno de sirenas, piratas y los Niños Perdidos. Enfrentan al temible Capitán Garfio, cuyo único miedo es un cocodrilo que hizo sonar un reloj al devorar su mano. La obra explora el contraste entre la libertad de la infancia y las responsabilidades de la adultez, así como el deseo de inmortalizar los momentos más felices de la vida."
-},
-{
-    "imagen" : "https://images.cdn3.buscalibre.com/fit-in/360x360/c6/97/c697da37f1685943b95ef6c5a1fca60a.jpg",
-    "titulo" : "El maravilloso mago de Oz",
-    "año de publicación" : "1900",
-    "autor" : "L. Frank Baum",
-    "genero" : "Infantil",
-    "descripcion" : "En esta clásica novela de 1900, Dorothy Gale, una niña de Kansas, es arrastrada por un tornado a la fantástica tierra de Oz junto con su perro Toto. En su búsqueda para regresar a casa, sigue el Camino de Ladrillos Amarillos hasta la Ciudad Esmeralda, donde espera que el poderoso Mago de Oz la ayude. En el camino, se une a un Espantapájaros que busca un cerebro, un Hombre de Hojalata que desea un corazón y un León Cobarde que anhela valentía. A medida que enfrentan pruebas y descubren sus propias fortalezas, Dorothy aprende que el verdadero hogar está donde está su corazón."
-},
-{
-    "imagen" : "https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/625452f02406290ee29de831_6034d7d1f3e0f5af78b2b167_Alicia-a-traves-del-espejo-lewis-carroll-editorial-alma.jpeg",
-    "titulo" : "Alicia a través del espejo",
-    "año de publicación" : "1871",
-    "autor" : "Lewis Carroll",
-    "genero" : "Infantil",
-    "descripcion" : "Publicada en 1871 como continuación de Alicia en el País de las Maravillas, esta novela sigue a Alicia cuando atraviesa un espejo y entra en un mundo donde todo funciona al revés, como si fuera un tablero de ajedrez. En esta tierra surrealista, Alicia se encuentra con personajes inolvidables como Tweedledum y Tweedledee, el Caballero Blanco, y la Reina Roja, quienes la guían en su viaje para convertirse en reina. La obra está llena de acertijos, juegos de lógica y reflexiones sobre identidad y madurez, todo envuelto en una narrativa mágica y onírica."
-},
-{
-    "imagen" : "https://images.cdn1.buscalibre.com/fit-in/360x360/32/3b/323b3d1edde1cb6f574276618318afbb.jpg",
-    "titulo" : "El libro de la selva",
-    "año de publicación" : "1894",
-    "autor" : "Rudyard Kipling",
-    "genero" : "Infantil",
-    "descripcion" : "Escrito en 1894, esta colección de cuentos tiene como eje principal la historia de Mowgli, un niño humano criado por una manada de lobos en la jungla india. Con la guía del sabio oso Baloo y la protectora pantera Bagheera, Mowgli aprende las leyes de la selva mientras enfrenta al temible tigre Shere Khan, que lo ve como una amenaza. Además de la historia principal, el libro incluye relatos sobre otros animales, como el sigiloso mangosta Rikki-Tikki-Tavi. La obra es un canto a la naturaleza, la pertenencia y el equilibrio entre el hombre y el entorno salvaje."
-},
-{
-    "imagen" : "https://biblioabrazo.wordpress.com/wp-content/uploads/2011/08/sauces-portada.jpg?w=584",
-    "titulo" : "El viento en los sauces",
-    "año de publicación" : "1908",
-    "autor" : "Kenneth Grahame",
-    "genero" : "Infantil",
-    "descripcion" : "Publicada en 1908, esta novela sigue las encantadoras vidas de un grupo de animales antropomorfos que habitan un mundo rural idealizado. Topo, Rata de Agua, el extravagante y temerario Sr. Sapo, y el severo pero protector Tejón viven una serie de aventuras, desde paseos tranquilos por el río hasta enfrentamientos con comadrejas para recuperar la mansión de Sapo. Con una prosa poética y descripciones evocadoras, la obra celebra la amistad, la naturaleza y los valores tradicionales, ofreciendo una visión nostálgica de la vida en el campo."
-},
-{
-    "imagen" : "https://images.cdn3.buscalibre.com/fit-in/360x360/be/f5/bef58803f001add87e2f0c33ca9fa87f.jpg",
-    "titulo" : "El Principito",
-    "año de publicación" : "1943",
-    "autor" : "Antoine de Saint-Exupéry",
-    "genero" : "Infantil",
-    "descripcion" : "Publicada en 1943, esta obra es una mezcla de cuento infantil y profunda alegoría filosófica. Un aviador que ha aterrizado en el desierto del Sahara conoce al Principito, un niño que proviene de un asteroide lejano. A través de los relatos del Principito sobre sus viajes a diferentes planetas y los personajes que encuentra, como el Rey, el Vanidoso y el Zorro, la historia aborda temas como la soledad, la amistad, el amor y el sentido de la vida. La simplicidad de la narrativa contrasta con su poderosa introspección sobre lo que realmente importa."
-},
-{
-    "imagen" : "https://images.cdn2.buscalibre.com/fit-in/360x360/0c/7f/0c7f14787992f575da9de9fdcc254e3f.jpg",
-    "titulo" : "Canción de Navidad",
-    "año de publicación" : "1843",
-    "autor" : "Charles Dickens",
-    "genero" : "Infantil",
-    "descripcion" : "En este clásico de 1843, Ebenezer Scrooge, un hombre avaro y amargado, recibe la visita de tres fantasmas en Nochebuena: el del Pasado, el del Presente y el del Futuro. Estos espíritus le muestran las consecuencias de su mezquindad, desde las vidas que ha afectado hasta su trágico destino si no cambia su actitud. Conmovido por estas visiones, Scrooge se transforma en un hombre generoso y lleno de espíritu navideño. La novela combina crítica social con un mensaje esperanzador sobre la redención y el poder del cambio."
-},
-{
-    "imagen" : "https://images.cdn2.buscalibre.com/fit-in/360x360/01/a0/01a088ded508dbb7439c267529a769ca.jpg",
-    "titulo" : "Alicia en el pais de las maravillas",
-    "año de publicación" : "1865",
-    "autor" : "Lewis Carroll",
-    "genero" : "Infantil",
-    "descripcion" : "Escrita en 1865, esta novela sigue a Alicia, una niña curiosa que cae por un agujero y llega a un mundo fantástico lleno de personajes excéntricos, como el Conejo Blanco, el Sombrerero Loco, la Liebre de Marzo y la Reina de Corazones. Las reglas de la lógica parecen no aplicarse en este mundo, donde los juegos de palabras y las situaciones absurdas desafían la comprensión de la realidad. La obra es tanto una aventura infantil como una sátira social que invita a la reflexión."
-}
+    
+    {
+        "id": 6,
+        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/df/ff/dfff4d35a1fea51905c2ca8766b091e9.jpg",
+        "titulo": "Los crímenes de la Calle Morgue",
+        "año de publicación": "1841",
+        "autor": "Edgar Allan Poe",
+        "genero": "Terror",
+        "descripcion": "Publicado en 1841, este cuento es considerado el precursor del género de detectives. Auguste Dupin, un hombre de gran intelecto y habilidades deductivas, investiga un brutal asesinato de dos mujeres en París. El misterio rodea la naturaleza del crimen, ya que las puertas estaban cerradas desde dentro y los testigos no coinciden en sus testimonios. Dupin desentraña el enigma utilizando un método lógico y deductivo que más tarde inspiraría a personajes como Sherlock Holmes. La obra mezcla intriga, violencia y una resolución sorprendente.",
+        "precio": 15200
+    },
+    {
+        "id": 7,
+        "imagen": "https://cdn.agapea.com/Ediciones-Jaguar/EL-HOMBRE-LOBO-DE-PARIS-i1n176513.jpg",
+        "titulo": "Un hombre lobo en París",
+        "año de publicación": "1933",
+        "autor": "Guy Endore",
+        "genero": "Terror",
+        "descripcion": "Publicada en 1933, esta novela mezcla historia, filosofía y terror gótico. Relata la vida de Bertrand Caillet, un hombre que descubre que es un hombre lobo y lucha contra su naturaleza violenta. Ambientada en la Francia del siglo XIX, la historia aborda cuestiones de identidad, redención y la lucha entre el bien y el mal. También es una crítica social y política que examina la monstruosidad tanto en lo humano como en lo sobrenatural.",
+        "precio": 18700
+    },
+    {
+        "id": 8,
+        "imagen": "https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/6254530f4ed610669fcec2a6_60463d34a41e5e5d28298af9_9788418395024_Carmilla_ClC3A1sicos20Ilustrados_COVER.jpeg",
+        "titulo": "Carmilla",
+        "año de publicación": "1872",
+        "autor": "Sheridan Le Fanu",
+        "genero": "Terror",
+        "descripcion": "Escrita en 1872, esta novela corta cuenta la historia de Laura, una joven que vive en un castillo aislado con su padre. La llegada de Carmilla, una mujer misteriosa y encantadora, desencadena una serie de eventos extraños, incluidas enfermedades inexplicables y muertes en el área. Carmilla desarrolla una relación íntima con Laura, lo que sugiere un subtexto de atracción homoerótica. Finalmente, se revela que Carmilla es una vampira que ha vivido siglos alimentándose de jóvenes. Es una de las primeras historias de vampiros que influyó en obras posteriores, incluido Drácula.",
+        "precio": 16200
+    },
+    {
+        "id": 9,
+        "imagen": "https://imgv2-1-f.scribdassets.com/img/word_document/482560205/original/216x287/83ce571df6/1668843116?v=1",
+        "titulo": "La máquina del tiempo",
+        "año de publicación": "1895",
+        "autor": "H. G. Wells",
+        "genero": "Ciencia Ficción",
+        "descripcion": "Esta novela de ciencia ficción publicada en 1895 narra las aventuras de un científico conocido como El Viajero del Tiempo, quien construye una máquina para explorar el futuro. Al llegar al año 802.701, descubre una sociedad dividida entre los Eloi, seres pacíficos y frágiles que habitan la superficie, y los Morlocks, criaturas subterráneas que los cazan. La obra reflexiona sobre la evolución social y los posibles destinos de la humanidad.",
+        "precio": 19300
+    },
+    {
+        "id": 10,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdxbxLSq-62YZRnQ0EoFWwQEy8oKGqK1D9bQ&s",
+        "titulo": "Planilandia, una novela de muchas dimensiones",
+        "año de publicación": "1884",
+        "autor": "Edwin A. Abbott",
+        "genero": "Ciencia Ficción",
+        "descripcion": "Escrita en 1884, esta alegoría matemática y satírica presenta un mundo bidimensional habitado por figuras geométricas. A través de los ojos de un cuadrado, se exploran conceptos como dimensiones superiores e inferioridad social. La obra critica las jerarquías de la sociedad victoriana y ofrece una reflexión sobre cómo percibimos nuestra realidad.",
+        "precio": 15900
+    },
+    {
+        "id": 11,
+        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/be/f5/bef58803f001add87e2f0c33ca9fa87f.jpg",
+        "titulo": "Un yanqui en la corte del Rey Arturo",
+        "año de publicación": "1889",
+        "autor": "Mark Twain",
+        "genero": "Ciencia Ficción",
+        "descripcion": "Publicada en 1889, esta novela satírica cuenta la historia de Hank Morgan, un estadounidense del siglo XIX que, tras un golpe en la cabeza, despierta en la Inglaterra medieval. Con sus conocimientos modernos, intenta reformar la sociedad feudal de la época, enfrentándose a la superstición y al poder de la Iglesia. Twain utiliza el humor y el absurdo para criticar tanto las instituciones medievales como las contemporáneas.",
+        "precio": 18000
+    },    
+        
+    
+    {
+        "id": 12,
+        "imagen": "https://www.curriculumnacional.cl/614/articles-86177_thumbnail.thumb_iNormal.jpg",
+        "titulo": "Los primeros hombres en la Luna",
+        "año de publicación": "1901",
+        "autor": "H. G. Wells",
+        "genero": "Ciencia Ficción",
+        "descripcion": "En esta novela de 1901, el empresario Bedford y el científico Cavor viajan a la Luna gracias a una sustancia antigravitatoria. Allí encuentran una civilización subterránea de insectoides llamados selenitas. La historia explora temas como la colonización, la naturaleza del contacto con otras especies y las diferencias culturales.",
+        "precio": 17600
+    },
+    {
+        "id": 13,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0p6HmxgK1M50wKpy5N6Ev1M95Dr9JKQW8w&s",
+        "titulo": "La guerra de los mundos",
+        "año de publicación": "1898",
+        "autor": "H. G. Wells",
+        "genero": "Ciencia Ficción",
+        "descripcion": "Publicada en 1898, esta obra de ciencia ficción describe la invasión de la Tierra por parte de marcianos que utilizan máquinas avanzadas para devastar el planeta. A través de los ojos de un narrador anónimo, se revela la lucha desesperada de la humanidad por sobrevivir. Es una crítica a la colonización imperialista y una reflexión sobre la fragilidad de la civilización humana.",
+        "precio": 18200
+    },
+    {
+        "id": 14,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRun57e7VhQ3r1uSQuVBRSmd5JM90y_acABzg&s",
+        "titulo": "20.000 leguas de viaje submarino",
+        "año de publicación": "1870",
+        "autor": "Jules Verne",
+        "genero": "Ciencia Ficción",
+        "descripcion": "Publicada en 1870, esta novela sigue las aventuras del profesor Aronnax, su ayudante Conseil y el arponero Ned Land, quienes son capturados por el Capitán Nemo a bordo del submarino Nautilus. Viajan a través de los océanos, enfrentando criaturas marinas y explorando misterios submarinos, mientras descubren las motivaciones de Nemo, quien rechaza el mundo terrestre.",
+        "precio": 19300
+    },
+    {
+        "id": 15,
+        "imagen": "https://sbslibreria.vtexassets.com/arquivos/ids/181435/9788494773471.jpg?v=636814437166930000",
+        "titulo": "El hombre invisible",
+        "año de publicación": "1897",
+        "autor": "H. G. Wells",
+        "genero": "Ciencia Ficción",
+        "descripcion": "Publicada en 1897, esta novela relata la historia de Griffin, un científico que descubre cómo volverse invisible mediante un experimento. Sin embargo, su invisibilidad lo lleva al aislamiento, la paranoia y actos de crueldad, lo que resulta en su caída. La obra reflexiona sobre las consecuencias del poder y la falta de responsabilidad moral.",
+        "precio": 15800
+    },
+    {
+        "id": 16,
+        "imagen": "https://www.eslocotidiano.com/media/eslocotidiano/images/2022/10/02/2022100208425510602.jpg",
+        "titulo": "El alimento de los dioses y cómo vino a la Tierra",
+        "año de publicación": "1904",
+        "autor": "H. G. Wells",
+        "genero": "Ciencia Ficción",
+        "descripcion": "En esta obra de 1904, dos científicos desarrollan un alimento experimental que hace crecer de manera descomunal a los seres vivos. El experimento da lugar a gigantes humanos y animales, lo que desata conflictos entre estos seres y el resto de la humanidad. La novela explora temas de progreso científico, miedo al cambio y las tensiones sociales.",
+        "precio": 16800
+    },
+    {
+        "id": 17,
+        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/54/53/545330cd89982cfb9f5336717f70ccb1.jpg",
+        "titulo": "Peter Pan",
+        "año de publicación": "1911",
+        "autor": "J. M. Barrie",
+        "genero": "Infantil",
+        "descripcion": "Publicado en 1911, Peter Pan relata la historia de un niño que se niega a crecer y vive en el mágico País de Nunca Jamás, donde las aventuras nunca terminan. Peter, junto con su hada compañera Campanita, lleva a Wendy y sus hermanos, John y Michael, a su mundo lleno de sirenas, piratas y los Niños Perdidos. Enfrentan al temible Capitán Garfio, cuyo único miedo es un cocodrilo que hizo sonar un reloj al devorar su mano. La obra explora el contraste entre la libertad de la infancia y las responsabilidades de la adultez, así como el deseo de inmortalizar los momentos más felices de la vida.",
+        "precio": 17500
+    },
+    {
+        "id": 18,
+        "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/c6/97/c697da37f1685943b95ef6c5a1fca60a.jpg",
+        "titulo": "El maravilloso mago de Oz",
+        "año de publicación": "1900",
+        "autor": "L. Frank Baum",
+        "genero": "Infantil",
+        "descripcion": "En esta clásica novela de 1900, Dorothy Gale, una niña de Kansas, es arrastrada por un tornado a la fantástica tierra de Oz junto con su perro Toto. En su búsqueda para regresar a casa, sigue el Camino de Ladrillos Amarillos hasta la Ciudad Esmeralda, donde espera que el poderoso Mago de Oz la ayude. En el camino, se une a un Espantapájaros que busca un cerebro, un Hombre de Hojalata que desea un corazón y un León Cobarde que anhela valentía. A medida que enfrentan pruebas y descubren sus propias fortalezas, Dorothy aprende que el verdadero hogar está donde está su corazón.",
+        "precio": 17400
+    },
+    {
+        "id": 19,
+        "imagen": "https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/625452f02406290ee29de831_6034d7d1f3e0f5af78b2b167_Alicia-a-traves-del-espejo-lewis-carroll-editorial-alma.jpeg",
+        "titulo": "Alicia a través del espejo",
+        "año de publicación": "1871",
+        "autor": "Lewis Carroll",
+        "genero": "Infantil",
+        "descripcion": "Publicada en 1871 como continuación de Alicia en el País de las Maravillas, esta novela sigue a Alicia cuando atraviesa un espejo y entra en un mundo donde todo funciona al revés, como si fuera un tablero de ajedrez. En esta tierra surrealista, Alicia se encuentra con personajes inolvidables como Tweedledum y Tweedledee, el Caballero Blanco, y la Reina Roja, quienes la guían en su viaje para convertirse en reina. La obra está llena de acertijos, juegos de lógica y reflexiones sobre identidad y madurez, todo envuelto en una narrativa mágica y onírica.",
+        "precio": 18100
+    },
+    {
+        "id": 20,
+        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/32/3b/323b3d1edde1cb6f574276618318afbb.jpg",
+        "titulo": "El libro de la selva",
+        "año de publicación": "1894",
+        "autor": "Rudyard Kipling",
+        "genero": "Infantil",
+        "descripcion": "Escrito en 1894, esta colección de cuentos tiene como eje principal la historia de Mowgli, un niño humano criado por una manada de lobos en la jungla india. Con la guía del sabio oso Baloo y la protectora pantera Bagheera, Mowgli aprende las leyes de la selva mientras enfrenta al temible tigre Shere Khan, que lo ve como una amenaza. Además de la historia principal, el libro incluye relatos sobre otros animales, como el sigiloso mangosta Rikki-Tikki-Tavi. La obra es un canto a la naturaleza, la pertenencia y el equilibrio entre el hombre y el entorno salvaje.",
+        "precio": 19300
+    },
+    {
+        "id": 21,
+        "imagen": "https://biblioabrazo.wordpress.com/wp-content/uploads/2011/08/sauces-portada.jpg?w=584",
+        "titulo": "El viento en los sauces",
+        "año de publicación": "1908",
+        "autor": "Kenneth Grahame",
+        "genero": "Infantil",
+        "descripcion": "Publicada en 1908, esta novela sigue las encantadoras vidas de un grupo de animales antropomorfos que habitan un mundo rural idealizado. Topo, Rata de Agua, el extravagante y temerario Sr. Sapo, y el severo pero protector Tejón viven una serie de aventuras, desde paseos tranquilos por el río hasta enfrentamientos con comadrejas para recuperar la mansión de Sapo. Con una prosa poética y descripciones evocadoras, la obra celebra la amistad, la naturaleza y los valores tradicionales, ofreciendo una visión nostálgica de la vida en el campo.",
+        "precio": 17900
+    },
+    {
+        "id": 22,
+        "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/be/f5/bef58803f001add87e2f0c33ca9fa87f.jpg",
+        "titulo": "El Principito",
+        "año de publicación": "1943",
+        "autor": "Antoine de Saint-Exupéry",
+        "genero": "Infantil",
+        "descripcion": "Publicada en 1943, esta obra es una mezcla de cuento infantil y profunda alegoría filosófica. Un aviador que ha aterrizado en el desierto del Sahara conoce al Principito, un niño que proviene de un asteroide lejano. A través de los relatos del Principito sobre sus viajes a diferentes planetas y los personajes que encuentra, como el Rey, el Vanidoso y el Zorro, la historia aborda temas como la soledad, la amistad, el amor y el sentido de la vida. La simplicidad de la narrativa contrasta con su poderosa introspección sobre lo que realmente importa.",
+        "precio": 18500
+    },
+    {
+        "id": 23,
+        "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/0c/7f/0c7f14787992f575da9de9fdcc254e3f.jpg",
+        "titulo": "Canción de Navidad",
+        "año de publicación": "1843",
+        "autor": "Charles Dickens",
+        "genero": "Infantil",
+        "descripcion": "En este clásico de 1843, Ebenezer Scrooge, un hombre avaro y amargado, recibe la visita de tres fantasmas en Nochebuena: el del Pasado, el del Presente y el del Futuro. Estos espíritus le muestran las consecuencias de su mezquindad, desde las vidas que ha afectado hasta su trágico destino si no cambia su actitud. Conmovido por estas visiones, Scrooge se transforma en un hombre generoso y lleno de espíritu navideño. La novela combina crítica social con un mensaje esperanzador sobre la redención y el poder del cambio.",
+        "precio": 17200
+    },
+    {
+        "id": 24,
+        "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/01/a0/01a088ded508dbb7439c267529a769ca.jpg",
+        "titulo": "Alicia en el país de las maravillas",
+        "año de publicación": "1865",
+        "autor": "Lewis Carroll",
+        "genero": "Infantil",
+        "descripcion": "Escrita en 1865, esta novela sigue a Alicia, una niña curiosa que cae por un agujero y llega a un mundo fantástico lleno de personajes excéntricos, como el Conejo Blanco, el Sombrerero Loco, la Liebre de Marzo y la Reina de Corazones. Las reglas de la lógica parecen no aplicarse en este mundo, donde los juegos de palabras y las situaciones absurdas desafían la comprensión de la realidad. La obra es tanto una aventura infantil como una sátira social que invita a la reflexión.",
+        "precio": 17800
+    }
 ]
 

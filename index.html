@@ -25,9 +25,9 @@
         <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
         <div class="carrito">
             <i class="bi bi-cart"></i>
+            <div class="cantidad-libros">0</div>
         </div>
     </div>
-    
         <nav class="nav" id = "nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
@@ -38,26 +38,34 @@
                 
             </ul>
             <div class="carrito">
-                <i class="bi bi-cart"></i>
+                <a href="carrito.html"><i class="bi-cart"></i></a>
+                <div class="cantidad-libros">0</div>
             </div>
         </nav>
         <br><br>
     <main>
-        <section class="presentacion">
-            <h2>Bienvenido a nuestra pagina web</h2>
-            <p>
-                ¡Bienvenidos a nuestra librería! Un espacio dedicado a los amantes libros. <br> Aquí encontrarás una amplia selección de historias que te transportarán a mundos llenos de aventuras, fantasía y conocimiento.<br> Desde libros que despiertan la curiosidad hasta libros que te causaran pesadillas, tenemos algo especial para cada lector. <br> ¡Sumérgete en nuestras estanterías y descubre tu próxima gran lectura!.</p>
+        <section class="vitrina">
+            <div class="vitrina-libros-container">
+                <h2>Clasicos de la Infancia</h2>
+                <article class="libros-infancia"></article>
+            </div>
+            <div class="vitrina-libros-container">
+                <h2>Clasicos de Terror</h2>
+                <article class="libros-terror"></article>
+            </div>
+            <div class="vitrina-libros-container">
+                <h2>Clasicos de la Ciencia Ficción</h2>
+                <article class="libros-ciencia-ficcion"></article>
+            </div>
+            
         </section>
-        <div class="gracias">
-            <video src="vid/Gracias por su atencion.mp4" controls></video>
-        </div>
-        
         
     </main>
     
     <footer>©2024</footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/productos.js"></script>
     
 </body>
 </html>

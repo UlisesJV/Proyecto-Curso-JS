@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,9 @@
     <link rel="icon" href="img/icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/carrito.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Contacto</title>
+    <title>Carrito</title>
 </head>
 <body>
     <header>
@@ -40,36 +41,15 @@
                 <div class="cantidad-libros">0</div>
             </div>
         </nav>
-        <br><br>
 
-    <form class = "contacto" action="https://formspree.io/f/xovqejvp" method="post">
-        <fieldset>
-            <legend><b>Información de Contacto</b></legend>
-            <br>
-            <label class = "texto-label" for="nombre">Tu nombre:</label>
-            <input class="info" name = "nombre" id = "nombre" type="text" size="22">
-            <br><br>
-            <label class = "texto-label" for="email">Tu Email:</label>
-            <input class="info" name="Email" id="email" type="email" size="20">
-           
-           <br><br>
-           <label class = "texto-label" for="mensaje">Mensaje:</label>
-           <textarea class="info" name="mensaje" id="mensaje" rows="8" cols="30">
-           </textarea>
-           <br><br>
-           <div class="enviar">
-            <button type="submit">Enviar</button>
-           </div>
-          
-        
-        </fieldset>
-        
-      </form>
-    <main>
-        
-    </main>
-    <br><br><br><br>
-    <footer>©2024</footer>
+        <main>
+            <section class="lista-carrito">
+                <article class="items">
+
+                </article>
+            </section>
+        </main>
     <script src="js/menu.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>

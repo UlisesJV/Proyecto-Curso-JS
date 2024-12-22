@@ -1,0 +1,79 @@
+.portada-libro{
+    display: inline-flex;
+    height: 200px;
+    width: 150px;
+}
+
+.libro{
+    display: flex;
+    gap: 1.5em;
+    margin: 1em .5em;
+    padding: 2em;
+    border: 1px solid #494949;
+    background-color: #161616;
+    border-radius: 1em;
+}
+
+.informacion p{
+    padding: .75em;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.btn{
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 2em;
+    margin: 0 1em;
+    margin-bottom: 4em;
+    padding: 1em;
+}
+
+.btn:hover{
+    color: white;
+    background-color: orangered;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.sin-items{
+    margin: 2em;
+    padding: 2em;
+    text-align: center;
+    border: 1px solid #494949;
+    background-color: #161616;
+    border-radius: 1em;
+}
+
+.agradecimiento{
+    margin: 1em;
+    padding: 2em;
+    text-align: center;
+    border: 1px solid #494949;
+    background-color: #161616;
+    border-radius: 1em;
+    color: orangered;
+    font-size: 4em;
+}
+
+@media screen and (max-width: 768px){
+    .agradecimiento{
+        font-size: 8vw;
+    }
+    .libro{
+        font-size: 12.5px;
+    }
+    .portada-libro{
+        height: 14em;
+        width: 8em;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}

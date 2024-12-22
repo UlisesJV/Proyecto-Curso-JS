@@ -1,0 +1,96 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const contenedorItems = document.querySelector(".items"); // Contenedor del carrito
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || []; // Cargar carrito desde localStorage
+
+    if (carrito.length === 0) {
+        // Usando innerHTML para agregar un <p> con el mensaje
+        contenedorItems.innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
+        return;
+    }
+    
+
+    carrito.forEach((producto) => {
+        let bandera = false; 
+        let acumular = 0;  
+        let elementoExistente; 
+        let aux = producto.precio;
+        carrito.forEach((item) => {
+            if (item.id === producto.id) {
+                bandera = true;
+            }
+
+            if (bandera && item.id === producto.id) {
+                acumular++;
+                producto.cantidad = acumular;  
+                producto.precio = aux * acumular;
+                elementoExistente = document.querySelector(`[data-id="${producto.id}"]`); 
+            }
+        });
+
+        if (bandera && elementoExistente) {
+            const parrafoCantidad = elementoExistente.querySelector('.informacion p:nth-child(4)');
+            parrafoCantidad.innerHTML = `Cantidad: <b>${producto.cantidad}</b>`;
+        } else {
+            const libro = `
+                <div class="libro" data-id="${producto.id}">
+                    <img src="${producto.imagen}" alt="${producto.titulo}" class="portada-libro" height="135" width="105">
+                    <div class="informacion">
+                        <p>Titulo: <b>${producto.titulo}</b></p>
+                        <p>Autor: <b>${producto.autor}</b></p>
+                        <p>Genero: <b>${producto.genero}</b></p>
+                        <p>Cantidad: <b>${producto.cantidad}</b></p>
+                        <p>Precio: <b>$${producto.precio}</b></p>
+                    </div>
+                </div>`;
+
+            contenedorItems.innerHTML += libro;
+            actualizarCantidadDeLibros();
+        }
+    });
+
+    const contenedorBotones = document.createElement("div");
+    contenedorBotones.classList.add("button-container");
+
+    const botonFinalizar = document.createElement("button");
+    botonFinalizar.textContent = "Finalizar Compra";
+    botonFinalizar.classList.add("btn", "btn-finalizar");
+    botonFinalizar.addEventListener("click", finalizarCompra);
+
+    const botonVaciar = document.createElement("button");
+    botonVaciar.textContent = "Vaciar Carrito";
+    botonVaciar.classList.add("btn", "btn-vaciar");
+    botonVaciar.addEventListener("click", vaciarCarrito);
+
+    contenedorBotones.appendChild(botonFinalizar);
+    contenedorBotones.appendChild(botonVaciar);
+
+    contenedorItems.appendChild(contenedorBotones);
+
+
+});
+
+function finalizarCompra() {
+    localStorage.removeItem("carrito");
+    document.querySelector(".items").innerHTML = '<p class="agradecimiento">Gracias por su compra! :)</p>';
+    actualizarCantidadDeLibros();
+    
+    
+}
+
+function vaciarCarrito() {
+    localStorage.removeItem("carrito");
+    document.querySelector(".items").innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
+    actualizarCantidadDeLibros();
+}
+function actualizarCantidadDeLibros() {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const cantidadDeLibros = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
+    const cantidadDeLibrosElements = document.querySelectorAll(".cantidad-libros");
+
+    console.log(cantidadDeLibrosElements); // Verifica si el elemento existe
+
+    // Itera sobre todos los elementos con la clase "cantidad-libros"
+    cantidadDeLibrosElements.forEach((element) => {
+        element.innerText = cantidadDeLibros;
+    });
+}

@@ -108,7 +108,25 @@ body {
     border-radius: 500px;
     padding: 15px;
 }
-
+.vitrina-libros-container{
+    background: #080808;
+    margin: 20px;
+    border-radius: 1.5em;
+    border: solid 1px #232323;
+}
+.libros-infancia,.libros-terror,.libros-ciencia-ficcion{
+    display: flex;
+    margin: 2em;
+    gap: 1.5em;
+}
+.vitrina div h2{
+    font-size: 2em;
+    margin: 1em 2em;
+    padding-top: .5em;
+    text-align: center;
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+}
 /* Mensaje de agradecimiento */
 .gracias {
     display: flex;
@@ -146,6 +164,26 @@ footer {
     padding: 1em;
     background-color: orangered;
 }
+.libros-ciencia-ficcion > .item > table > tbody > tr > th > img {
+    height: 250px;
+    
+}
+.libros-terror > .item > table > tbody > tr > th > img {
+    height: 250px;
+    
+}
+
+.libros-infancia > .item > table > tbody > tr > th > img {
+    height: 250px;
+    
+}
+.libros-ciencia-ficcion,.libros-infancia,.libros-terror{
+    padding: .5em 2em 2em;
+}
+.vitrina h2{
+    color: rgb(255, 123, 0);
+    text-decoration: underline;
+}
 
 /* Responsividad para dispositivos pequeños (hasta 600px) */
 @media screen and (max-width : 600px) {
@@ -177,13 +215,24 @@ footer {
         gap: 1em;
     }
 
+    .libros-ciencia-ficcion,.libros-terror,.libros-infancia{
+        flex-direction: column;
+        padding: 1.5em;
+        margin: 1em;
+        font-size: 1em;
+    }
+    .libros-ciencia-ficcion,.libros-terror,.libros-infancia div{
+        padding: 1.5em;
+    }
+    
+
     footer {
         text-align: center;
         padding: 1em;
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 601px){
     .merc-container {
         grid-template-columns: repeat(3, 1fr); /* Dos productos por fila */
         gap: 1.25em;
@@ -207,6 +256,29 @@ footer {
     .grid-container {
         grid-template-columns: 1fr; /* Una columna para las reseñas */
         gap: 1em;
+    }
+    .libros-ciencia-ficcion > .item > table > tbody > tr > th > img {
+        height: 250px;
+        width: 180px;
+        
+    }
+    .libros-terror > .item > table > tbody > tr > th > img {
+        height: 250px;
+        width: 180px;
+        
+    }
+    
+    .libros-infancia > .item > table > tbody > tr > th > img {
+        height: 250px;
+        width: 180px;
+        
+    }
+    .vitrina-libros-container{
+        margin: 1em !important;
+    }
+    .libros-ciencia-ficcion,.libros-infancia,.libros-terror{
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
 }
@@ -257,4 +329,14 @@ footer {
         width: 95%;
         padding: 2em .5em;
     }
+    .vitrina-libros-container{
+        margin: 2em 4em !important;
+        padding: 1em !important;
+    }
+    .libros-ciencia-ficcion,.libros-infancia,.libros-terror{
+        margin: 2em !important;
+        padding: 0 !important;
+        gap: 3em;
+    }
+    
 }

@@ -1,5 +1,9 @@
 
-
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
 .nav {
     position: sticky; /* Menú estático en pantallas grandes */
     list-style: none;
@@ -71,12 +75,16 @@ nav{
 }
 .carrito{
     display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1.5em;
 }
-nav .carrito i{
+nav .carrito a {
     padding-right: 1.75vw ;
     padding-bottom: 1.75vh;
-    transform: scale(1.75);
+    font-size: auto;
 }
+
 
 .carrito i:hover{
     color: rgb(255, 81, 0);
@@ -88,15 +96,177 @@ nav .carrito i{
     display: none;
 }
 
+.cantidad-libros {
+    position: absolute;
+    top: 0; /* Ajusta hacia arriba o abajo según el diseño */
+    right: 0; /* Ajusta hacia la izquierda o derecha */
+    background-color: rgb(255, 94, 0); /* Fondo para el número */
+    color: white; /* Color del texto */
+    font-size: 0.8rem; /* Tamaño del texto */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Alto del círculo */
+    border-radius: 50%; /* Hace que sea un círculo */
+    padding: .75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-1.2em, .25em); /* Posiciona mejor el círculo */
+    font-weight: bold; /* Resalta el número */
+    z-index: 1; /* Asegura que el número quede encima */
+}
+.compra{
+    cursor: pointer;
+}
+
 
 
 /* Estilos para pantallas pequeñas */
-@media screen and (max-width: 600px){
-    .carrito{
-        padding: 0 5vw;
+@media screen and (max-width: 599px){
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
     }
+    .nav {
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        justify-content:  start;
+        padding-top: 1em;
+        padding-left: .5em;
+        display: flex;
+        position: fixed;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;;
+        width: 250px; /* Ajusta el ancho del menú */
+        background-color: #1c1c1c;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        transform: translateX(-100%); /* Menú fuera de la vista por defecto */
+        visibility: hidden; /* Oculta el menú cuando no tiene la clase nav-visible */
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease; /* Transición suave */
+    }
+
+    .nav-visible {
+        transform: translateX(0); /* Mueve el menú a su posición visible */
+        opacity: 1;
+        visibility: visible; /* Muestra el menú */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .nav-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170%;
+        text-align: start; 
+        border-bottom: #ececec solid 1px;
+    }
+
+    .nav-list li a {
+        display: block;
+        width: 100%;
+        color: #ececec;
+        padding:1em;
+        text-decoration: none;
+    }
+    
+    /* Ajusta el área clickeable del abrir-menu a su tamaño real en todas las pantallas */
+        .abrir-menu {
+        display: inline-flex; /* Hace que el área clickeable se ajuste al tamaño del ícono */
+        justify-content: start;
+        padding: .1em; /* Elimina cualquier relleno alrededor del ícono */
+        width: 2px; /* El ancho se ajusta automáticamente al tamaño del ícono *//* La altura se ajusta automáticamente al tamaño del ícono */
+        cursor: pointer; /* Cursor de puntero cuando se pasa sobre el botón */
+    }   
+    .cantidad-libros {
+        background-color: rgb(255, 94, 0); /* Fondo para el número */
+        color: white; /* Color del texto */
+        font-size: 0.8rem; /* Tamaño del texto */
+        width: 1em; /* Ancho del círculo */
+        height: 1em; /* Alto del círculo */
+        border-radius: 50%; /* Hace que sea un círculo */
+        padding: .75em;
+        display: flex;
+        align-items: center;
+        justify-content: center;; /* Posiciona mejor el círculo */
+        font-weight: bold; /* Resalta el número */
+        z-index: 1; /* Asegura que el número quede encima */
+        padding-left: 10em;
+    }
+    .abrir-menu, .cerrar-menu {
+        width: 50%;
+        display: inline-flex;
+    }
+
+    .menu-responsive-container {
+        padding-left: 1.5em;
+        position: sticky;
+        top: 0;
+        width: 100%; 
+        z-index: 100;
+        background-color: #1c1c1c;
+    }
+    .carrito{
+        width: 50px;
+    }
+
+    .portada{
+        font-size: 1.5em;
+    }
+
+    nav .carrito{
+        display: none;
+    }
+    .menu-responsive-container{
+        display: flex;
+        color: #1c1c1c;
+        align-items: center;
+        justify-content:  space-between;
+    }
+    .menu-responsive-container .carrito{
+        display: flex;
+    }
+    .carrito{
+        font-size: 1.5em;
+    }
+    .cantidad-libros {
+        position:static;
+        top: 0; /* Ajusta hacia arriba o abajo según el diseño */
+        right: 0; /* Ajusta hacia la izquierda o derecha */
+        background-color: rgb(255, 94, 0); /* Fondo para el número */
+        color: white; /* Color del texto */
+        font-size: .5em; /* Tamaño del texto */
+        width: 1em; /* Ancho del círculo */
+        height: 1em; /* Alto del círculo */
+        border-radius: 50%; /* Hace que sea un círculo */
+        padding: .75em;
+        display: flex;
+        align-items: center;
+        transform: translate(-2.5vw,-.25em);
+        justify-content: start;
+        justify-content: center; /* Posiciona mejor el círculo */
+        font-weight: bold; /* Resalta el número */
+        z-index: 1; /* Asegura que el número quede encima */
+    }
+
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
     .nav {
         align-items: center;
         justify-content:  start;
@@ -151,8 +321,8 @@ nav .carrito i{
 
 
     .abrir-menu, .cerrar-menu {
-        width: 50%;
-        display: inline-flex;
+        display:flex;
+        margin-left: 1em;
     }
 
     .menu-responsive-container {
@@ -174,18 +344,64 @@ nav .carrito i{
 
 
     .menu-responsive-container{
-        display: flex;
+        display: inline-flex;
         color: #1c1c1c;
         align-items: center;
         justify-content:  space-between;
+        padding: 0;
     }
     .menu-responsive-container .carrito{
         display: flex;
     }
     .carrito i{
-        padding-right: 2vw ;
-        transform: scale(1.5);
+        font-size: 1.5em;
     }
-    
+    .carrito{
+        font-size: 1em;
+        height: auto;
+        transform: translateX(-.5em);
+    }
+    .cantidad-libros {
+        position:static;
+        top: 0; /* Ajusta hacia arriba o abajo según el diseño */
+        right: 0; /* Ajusta hacia la izquierda o derecha */
+        background-color: rgb(255, 94, 0); /* Fondo para el número */
+        color: white; /* Color del texto */
+        font-size: .5em; /* Tamaño del texto */
+        width: 1em; /* Ancho del círculo */
+        height: 1em; /* Alto del círculo */
+        border-radius: 50%; /* Hace que sea un círculo */
+        padding: .75em;
+        display: flex;
+        align-items: center;
+        transform: translate(-1em,-.25em);
+        font-size: .75em;
+        justify-content: start;
+        justify-content: center; /* Posiciona mejor el círculo */
+        font-weight: bold; /* Resalta el número */
+        z-index: 1; /* Asegura que el número quede encima */
+    }
+    .libros-infancia,.libros-terror,.libros-ciencia-ficcion{
+        display: flex;
+        margin: 10px;
+        gap: 1.5em;
+    }
+    .vitrina-libros-container{
+        margin: 4em;
+        padding: 1em 1em;
+    }
+    .vitrina-libros-container h2{
+        color: rgb(255, 115, 0);
+        text-decoration: underline;
+        transform: translateY(-.80em);
+        margin: 0;
+    }
+    .vitrina-libros-container article div img{
+        padding: auto;
+        margin: auto;
+        width: 120px;
+        height: 170px;
+        font-size: 10px;
+    }
 }
 
