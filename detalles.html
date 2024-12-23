@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Contacto</title>
+    
+    <title>Detalles</title>
 </head>
 <body>
     <header>
         <div class="portada">
-            <img class = "libro-de-portada"src="img/libro-portada.png" alt="libro-portada" height="85px">
+            <img class = "libro-de-portada" src="img/libro-portada.png" alt="libro-portada" height="85px">
             <h1>El Umbral del Libro</h1>
         </div>
     </header>
+
     <div class="menu-responsive-container">
         <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
         <div class="carrito">
@@ -41,40 +43,27 @@
             </div>
         </nav>
         <br><br>
-
-    <form class = "contacto" action="https://formspree.io/f/xovqejvp" method="post">
-        <fieldset>
-            <legend><b>Información de Contacto</b></legend>
-            <br>
-            <label class = "texto-label" for="nombre">Tu nombre: </label>
-            <div class="input-container">
-                <i class="bi-person"></i><input class="info" name = "nombre" id = "nombre" type="text" size="22">
-            </div>
-            
-            <br><br>
-            <label class = "texto-label" for="email">Tu Email:</label>
-            <div class="input-container">
-                <i class="bi-envelope"></i><input class="info" name="Email" id="email" type="email" size="20">
-            </div>
-            
-           
-           <br><br>
-           <label class = "texto-label" for="mensaje">Mensaje:</label>
-           <textarea class="info" name="mensaje" id="mensaje" rows="5" cols="30">
-           </textarea>
-           <div class="enviar">
-            <button type="submit">Enviar</button>
-           </div>
-          
-        
-        </fieldset>
-        
-      </form>
     <main>
+        <div class="descripcion-ampliada">
+            <img src="" alt="libro-portada" height="250px">
+            <div class="datos">
+                <p><strong>Título:</strong> <span id="titulo"></span></p>
+                <p><strong>Autor:</strong> <span id="autor"></span></p>
+                <p><strong>Precio:</strong> $ <span id="precio"></span></p>
+                <p class="desc-container"><strong >Descripción:</strong></p>
+                <div id="descripcion"></div>
+            </div>
+        </div>
+
+
         
     </main>
-    <br><br><br><br>
+    
     <footer>©2024</footer>
+
     <script src="js/menu.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/detalles.js"></script>
+    
 </body>
 </html>

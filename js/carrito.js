@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const contenedorItems = document.querySelector(".items"); // Contenedor del carrito
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || []; // Cargar carrito desde localStorage
+    const contenedorItems = document.querySelector(".items");
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     if (carrito.length === 0) {
-        // Usando innerHTML para agregar un <p> con el mensaje
         contenedorItems.innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
         return;
     }
-    
 
     carrito.forEach((producto) => {
         let bandera = false; 
@@ -55,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     botonFinalizar.textContent = "Finalizar Compra";
     botonFinalizar.classList.add("btn", "btn-finalizar");
     botonFinalizar.addEventListener("click", finalizarCompra);
+    mostrarTotal();
 
     const botonVaciar = document.createElement("button");
     botonVaciar.textContent = "Vaciar Carrito";
@@ -65,32 +64,56 @@ document.addEventListener("DOMContentLoaded", () => {
     contenedorBotones.appendChild(botonVaciar);
 
     contenedorItems.appendChild(contenedorBotones);
-
-
 });
 
 function finalizarCompra() {
     localStorage.removeItem("carrito");
-    document.querySelector(".items").innerHTML = '<p class="agradecimiento">Gracias por su compra! :)</p>';
+    const contenedorItems = document.querySelector(".items");
+    contenedorItems.innerHTML = '<p class="agradecimiento">Gracias por su compra! :)</p>';
     actualizarCantidadDeLibros();
-    
-    
+    eliminarTotal();
 }
 
 function vaciarCarrito() {
     localStorage.removeItem("carrito");
-    document.querySelector(".items").innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
+    const contenedorItems = document.querySelector(".items");
+    contenedorItems.innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
     actualizarCantidadDeLibros();
+    eliminarTotal();
 }
+
 function actualizarCantidadDeLibros() {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const cantidadDeLibros = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
     const cantidadDeLibrosElements = document.querySelectorAll(".cantidad-libros");
 
-    console.log(cantidadDeLibrosElements); // Verifica si el elemento existe
-
-    // Itera sobre todos los elementos con la clase "cantidad-libros"
     cantidadDeLibrosElements.forEach((element) => {
         element.innerText = cantidadDeLibros;
     });
+}
+
+function mostrarTotal() {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const precioTotal = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+    
+    const contenedorItems = document.querySelector(".items");
+
+    const totalElemento = document.createElement("div");
+    totalElemento.classList.add("total-container");
+    totalElemento.innerHTML = `<p><strong>Total: $${precioTotal}</strong></p>`;
+
+    const totalExistente = contenedorItems.querySelector(".total-container");
+    if (!totalExistente) {
+        contenedorItems.appendChild(totalElemento);
+    } else {
+        totalExistente.innerHTML = `<p><strong>Total: $${precioTotal}</strong></p>`;
+    }
+}
+
+function eliminarTotal() {
+    const contenedorItems = document.querySelector(".items");
+    const totalExistente = contenedorItems.querySelector(".total-container");
+    if (totalExistente) {
+        totalExistente.remove();
+    }
 }

@@ -6,7 +6,7 @@
         "año de publicación": "1897",
         "autor": "Bram Stoker",
         "genero": "Terror",
-        "descripcion": "Esta novela gótica cuenta la historia del Conde Drácula...",
+        "descripcion": "Esta novela gótica cuenta la historia del Conde Drácula, un vampiro que busca mudarse a Inglaterra para expandir su influencia. A lo largo de la obra, se relatan los esfuerzos de un grupo de personas para detener al monstruo que amenaza con destruir sus vidas. Es una de las obras más influyentes del género de terror y ha sido adaptada innumerables veces en cine y teatro.",
         "precio": 17500
     },
     {
@@ -16,7 +16,7 @@
         "año de publicación": "1886",
         "autor": "Robert Louis Stevenson",
         "genero": "Terror",
-        "descripcion": "Esta novela corta explora la dualidad del ser humano...",
+        "descripcion": "Esta novela corta explora la dualidad del ser humano a través del personaje del Dr. Jekyll, un respetable científico que, al tomar una poción, se transforma en el malvado y monstruoso Mr. Hyde. La obra plantea preguntas profundas sobre la naturaleza del bien y el mal, y cómo coexisten dentro de una misma persona, abordando la lucha interna entre las facetas opuestas de la personalidad.",
         "precio": 16000
     },
     {
@@ -26,7 +26,7 @@
         "año de publicación": "1926",
         "autor": "H. P. Lovecraft",
         "genero": "Terror",
-        "descripcion": "Escrito en 1926, este relato de horror cósmico...",
+        "descripcion": "Escrito en 1926, este relato de horror cósmico introduce la figura del monstruo Cthulhu, una de las entidades más aterradoras en el universo literario de H. P. Lovecraft. La historia narra los esfuerzos de una serie de personas que intentan comprender y sobrevivir a una entidad primigenia cuya existencia pone en peligro la cordura humana y la estabilidad de la realidad misma.",
         "precio": 18000
     },
     {
@@ -36,24 +36,24 @@
         "año de publicación": "1818",
         "autor": "Mary Shelley",
         "genero": "Terror",
-        "descripcion": "Publicada en 1818, esta novela cuenta la historia de Victor Frankenstein...",
+        "descripcion": "Publicada en 1818, esta novela cuenta la historia de Victor Frankenstein, un joven científico que, en su afán de superar la muerte, crea una criatura a partir de cadáveres humanos. La novela explora temas como la ambición desmedida, la ética en la ciencia, la soledad, y la creación, mientras la monstruosa criatura, rechazada por su creador y la sociedad, busca venganza y respuestas.",
         "precio": 15000
     },
     {
         "id": 5,
-        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/fb/2b/fb2b2364b36a59aa300eaab6d377cf94.jpg",
+        "imagen": "https://acdn.mitiendanube.com/stores/056/134/products/zr-gato-negro-pocket-new1-b2eaa4f6c4fab8dcc916263766566310-640-0.webp",
         "titulo": "El gato negro",
         "año de publicación": "1843",
         "autor": "Edgar Allan Poe",
         "genero": "Terror",
-        "descripcion": "En este relato de 1843, el narrador, un hombre común...",
+        "descripcion": "En este relato de 1843, el narrador, un hombre común, se convierte en víctima de su propia locura al intentar exterminar a un gato negro, un acto que desencadenará una serie de eventos trágicos y aterradores. La obra profundiza en el descenso a la locura, la superstición y la culpa, y cómo la percepción distorsionada de la realidad puede llevar a la autodestrucción.",
         "precio": 19000
     },
 
     
     {
         "id": 6,
-        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/df/ff/dfff4d35a1fea51905c2ca8766b091e9.jpg",
+        "imagen": "https://resumenlibro.net/wp-content/uploads/2024/06/libro-1521707142.jpg",
         "titulo": "Los crímenes de la Calle Morgue",
         "año de publicación": "1841",
         "autor": "Edgar Allan Poe",
@@ -63,8 +63,8 @@
     },
     {
         "id": 7,
-        "imagen": "https://cdn.agapea.com/Ediciones-Jaguar/EL-HOMBRE-LOBO-DE-PARIS-i1n176513.jpg",
-        "titulo": "Un hombre lobo en París",
+        "imagen": "https://mocencahua.wordpress.com/wp-content/uploads/2013/12/wpid-wp-1387988455281.jpg",
+        "titulo": "El hombre lobo en París",
         "año de publicación": "1933",
         "autor": "Guy Endore",
         "genero": "Terror",
@@ -83,7 +83,7 @@
     },
     {
         "id": 9,
-        "imagen": "https://imgv2-1-f.scribdassets.com/img/word_document/482560205/original/216x287/83ce571df6/1668843116?v=1",
+        "imagen": "https://data.livriz.com/media/MediaSpace/F9AFB48D-741D-4834-B760-F59344EEFF34/4/0b650353-d1a6-458d-be45-f6f5942ee9ff/9789878304137.jpg",
         "titulo": "La máquina del tiempo",
         "año de publicación": "1895",
         "autor": "H. G. Wells",
@@ -93,7 +93,7 @@
     },
     {
         "id": 10,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdxbxLSq-62YZRnQ0EoFWwQEy8oKGqK1D9bQ&s",
+        "imagen": "https://www.edicontinente.com.ar/image/titulos/9788497163668.jpg",
         "titulo": "Planilandia, una novela de muchas dimensiones",
         "año de publicación": "1884",
         "autor": "Edwin A. Abbott",
@@ -103,7 +103,7 @@
     },
     {
         "id": 11,
-        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/be/f5/bef58803f001add87e2f0c33ca9fa87f.jpg",
+        "imagen": "https://www.catedra.com/imagenes/libros/grande/9788437617428-un-yanqui-en-la-corte-del-rey-arturo.jpg",
         "titulo": "Un yanqui en la corte del Rey Arturo",
         "año de publicación": "1889",
         "autor": "Mark Twain",
@@ -115,7 +115,7 @@
     
     {
         "id": 12,
-        "imagen": "https://www.curriculumnacional.cl/614/articles-86177_thumbnail.thumb_iNormal.jpg",
+        "imagen": "https://cdn.kobo.com/book-images/bf8fcc2a-948b-4c0a-a7a5-c97f1e78baef/353/569/90/False/los-primeros-hombres-en-la-luna.jpg",
         "titulo": "Los primeros hombres en la Luna",
         "año de publicación": "1901",
         "autor": "H. G. Wells",
@@ -125,7 +125,7 @@
     },
     {
         "id": 13,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0p6HmxgK1M50wKpy5N6Ev1M95Dr9JKQW8w&s",
+        "imagen": "https://www.mrbooks.com/mrbooks/portadas/9788419599070.webp",
         "titulo": "La guerra de los mundos",
         "año de publicación": "1898",
         "autor": "H. G. Wells",
@@ -135,7 +135,7 @@
     },
     {
         "id": 14,
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRun57e7VhQ3r1uSQuVBRSmd5JM90y_acABzg&s",
+        "imagen": "https://contentv2.tap-commerce.com/cover/large/9789588296128_1.jpg?id_com=1156&back=fad2e1",
         "titulo": "20.000 leguas de viaje submarino",
         "año de publicación": "1870",
         "autor": "Jules Verne",
@@ -165,7 +165,7 @@
     },
     {
         "id": 17,
-        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/54/53/545330cd89982cfb9f5336717f70ccb1.jpg",
+        "imagen": "https://data.livriz.com/media/mediaspace/F9AFB48D-741D-4834-B760-F59344EEFF34/4/10f4f425-d7c6-4321-bb41-803ebce7eeb3/9789878978970.jpg",
         "titulo": "Peter Pan",
         "año de publicación": "1911",
         "autor": "J. M. Barrie",
@@ -175,7 +175,7 @@
     },
     {
         "id": 18,
-        "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/c6/97/c697da37f1685943b95ef6c5a1fca60a.jpg",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_694819-MLA75686287842_042024-O.webp",
         "titulo": "El maravilloso mago de Oz",
         "año de publicación": "1900",
         "autor": "L. Frank Baum",
@@ -195,7 +195,7 @@
     },
     {
         "id": 20,
-        "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/32/3b/323b3d1edde1cb6f574276618318afbb.jpg",
+        "imagen": "https://circuloeditorialazteca.com/wp-content/uploads/2020/01/02_LIBRO_SELVA-627x1024.jpg",
         "titulo": "El libro de la selva",
         "año de publicación": "1894",
         "autor": "Rudyard Kipling",
@@ -215,7 +215,7 @@
     },
     {
         "id": 22,
-        "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/be/f5/bef58803f001add87e2f0c33ca9fa87f.jpg",
+        "imagen": "https://www.editorialguadal.com.ar/wp-content/uploads/2023/01/9789877979015.png",
         "titulo": "El Principito",
         "año de publicación": "1943",
         "autor": "Antoine de Saint-Exupéry",
@@ -225,7 +225,7 @@
     },
     {
         "id": 23,
-        "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/0c/7f/0c7f14787992f575da9de9fdcc254e3f.jpg",
+        "imagen": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/62ae2d7b-89e1-44cf-8f7f-57949390d2cf/d_360_620/portada_cancion-de-navidad_charles-dickens_201807021800.webp",
         "titulo": "Canción de Navidad",
         "año de publicación": "1843",
         "autor": "Charles Dickens",
@@ -235,7 +235,7 @@
     },
     {
         "id": 24,
-        "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/01/a0/01a088ded508dbb7439c267529a769ca.jpg",
+        "imagen": "https://expreso.co.cr/alicia/wp-content/gallery/portadas/PXL_20231017_202001775.MP_.webp",
         "titulo": "Alicia en el país de las maravillas",
         "año de publicación": "1865",
         "autor": "Lewis Carroll",

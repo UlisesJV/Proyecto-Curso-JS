@@ -31,6 +31,9 @@ fetch("json/productos.json")
                                     <td style="color:orangered">$${producto.precio}</td>
                                 </tr>
                                 <tr>
+                                   <td><a class="detalles" href ="detalles.html?id=${producto.id}">Detalles</a></td>
+                                </tr>
+                                <tr>
                                     <td><span class="compra">Agregar</span></td>
                                 </tr>
                             </table>
@@ -52,6 +55,9 @@ fetch("json/productos.json")
                                 </tr>
                                 <tr>
                                     <td style="color:orangered">$${producto.precio}</td>
+                                </tr>
+                                <tr>
+                                   <td><a class="detalles" href ="detalles.html?id=${producto.id}">Detalles</a></td>
                                 </tr>
                                 <tr>
                                     <td><span class="compra">Agregar</span></td>
@@ -77,6 +83,9 @@ fetch("json/productos.json")
                                     <td style="color:orangered">$${producto.precio}</td>
                                 </tr>
                                 <tr>
+                                    <td><a class="detalles" href ="detalles.html?id=${producto.id}">Detalles</a></td>
+                                </tr>
+                                <tr>
                                     <td><span class="compra">Agregar</span></td>
                                 </tr>
                             </table>
@@ -99,6 +108,9 @@ fetch("json/productos.json")
                             <td style="color:orangered">$${producto.precio}</td>
                         </tr>
                         <tr>
+                            <td><a class="detalles" href ="detalles.html?id=${producto.id}">Detalles</a></td>
+                        </tr>
+                        <tr>
                             <td><span class="compra">Agregar</span></td>
                         </tr>
                     </table>
@@ -115,7 +127,7 @@ fetch("json/productos.json")
                 const producto = productos.find((p) => p.id == id);
 
                 if (producto) {
-                    const { titulo, autor, imagen, genero, id, precio } = producto;
+                    const { titulo, autor, imagen, genero, id, precio,descripcion } = producto;
                     const nuevoProducto = {
                         genero: genero,
                         imagen: imagen,
@@ -123,7 +135,8 @@ fetch("json/productos.json")
                         titulo: titulo,
                         autor: autor,
                         cantidad: 1,
-                        precio: precio
+                        precio: precio,
+                        descripcion :descripcion,
                     };
 
                     carrito.push(nuevoProducto);
@@ -137,7 +150,9 @@ fetch("json/productos.json")
             }
         });
 
+
         actualizarCantidadDeLibros();
+        
     })
     .catch((error) => {
         console.error("Error al cargar los productos:", error);
@@ -152,3 +167,4 @@ function actualizarCantidadDeLibros() {
         element.innerText = cantidadDeLibros;
     });
 }
+
