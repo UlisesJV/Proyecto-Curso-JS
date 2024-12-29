@@ -59,7 +59,8 @@ function finalizarCompra() {
     const contenedorItems = document.querySelector(".items");
     localStorage.removeItem("carrito");
     contenedorItems.innerHTML = '<p class="agradecimiento">Gracias por su compra! :)</p>';
-    actualizarCantidadDeLibros();
+    let mostrar0 = true;
+    actualizarCantidadDeLibros(mostrar0);
     setTimeout(() => {
         // Eliminar el total si existe
         eliminarTotal();
@@ -82,7 +83,7 @@ function vaciarCarrito() {
     eliminarTotal();
 }
 
-function actualizarCantidadDeLibros() {
+function actualizarCantidadDeLibros(mostrar0) {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const cantidadDeLibros = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
     const cantidadDeLibrosElements = document.querySelectorAll(".cantidad-libros");
@@ -90,6 +91,11 @@ function actualizarCantidadDeLibros() {
     cantidadDeLibrosElements.forEach((element) => {
         element.innerText = cantidadDeLibros;
     });
+
+    // Si el carrito está vacío (todas las cantidades son 0), vaciar el carrito automáticamente
+    if (cantidadDeLibros == 0 && !mostrar0) {
+        vaciarCarrito();
+    }
 }
 
 function mostrarTotal() {
