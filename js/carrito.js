@@ -1,51 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contenedorItems = document.querySelector(".items");
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    actualizarCantidadDeLibros();
 
-    if (carrito.length === 0) {
-        contenedorItems.innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
-        return;
-    }
+    // Si el carrito está vacío, mostrar mensaje
+    
 
     carrito.forEach((producto) => {
-        let bandera = false; 
-        let acumular = 0;  
-        let elementoExistente; 
-        let aux = producto.precio;
-        carrito.forEach((item) => {
-            if (item.id === producto.id) {
-                bandera = true;
-            }
-
-            if (bandera && item.id === producto.id) {
-                acumular++;
-                producto.cantidad = acumular;  
-                producto.precio = aux * acumular;
-                elementoExistente = document.querySelector(`[data-id="${producto.id}"]`); 
-            }
-        });
-
-        if (bandera && elementoExistente) {
-            const parrafoCantidad = elementoExistente.querySelector('.informacion p:nth-child(4)');
-            parrafoCantidad.innerHTML = `Cantidad: <b>${producto.cantidad}</b>`;
-        } else {
-            const libro = `
-                <div class="libro" data-id="${producto.id}">
-                    <img src="${producto.imagen}" alt="${producto.titulo}" class="portada-libro" height="135" width="105">
-                    <div class="informacion">
-                        <p>Titulo: <b>${producto.titulo}</b></p>
-                        <p>Autor: <b>${producto.autor}</b></p>
-                        <p>Genero: <b>${producto.genero}</b></p>
-                        <p>Cantidad: <b>${producto.cantidad}</b></p>
-                        <p>Precio: <b>$${producto.precio}</b></p>
+        const libro = `
+            <div class="libro" data-id="${producto.id}">
+                <img src="${producto.imagen}" alt="${producto.titulo}" class="portada-libro" height="135" width="105">
+                <div class="informacion">
+                    <p>Titulo: <b>${producto.titulo}</b></p>
+                    <p>Autor: <b>${producto.autor}</b></p>
+                    <p>Genero: <b>${producto.genero}</b></p>
+                    <p>Precio: <b>$${producto.precio}</b></p>
+                    <div class="cantidad-del-libro">
+                        <button class="btn-disminuir" onclick="quitarProducto('${producto.id}')">-</button>
+                        <span class="cantidad-producto">${producto.cantidad}</span>
+                        <button class="btn-aumentar" onclick="agregarProducto('${producto.id}')">+</button>
                     </div>
-                </div>`;
+                </div>
+            </div>`;
 
-            contenedorItems.innerHTML += libro;
-            actualizarCantidadDeLibros();
-        }
+        contenedorItems.innerHTML += libro;
     });
 
+    mostrarTotal();
     const contenedorBotones = document.createElement("div");
     contenedorBotones.classList.add("button-container");
 
@@ -53,26 +34,45 @@ document.addEventListener("DOMContentLoaded", () => {
     botonFinalizar.textContent = "Finalizar Compra";
     botonFinalizar.classList.add("btn", "btn-finalizar");
     botonFinalizar.addEventListener("click", finalizarCompra);
-    mostrarTotal();
 
     const botonVaciar = document.createElement("button");
     botonVaciar.textContent = "Vaciar Carrito";
     botonVaciar.classList.add("btn", "btn-vaciar");
     botonVaciar.addEventListener("click", vaciarCarrito);
 
+    contenedorItems.appendChild(contenedorBotones);
     contenedorBotones.appendChild(botonFinalizar);
     contenedorBotones.appendChild(botonVaciar);
 
-    contenedorItems.appendChild(contenedorBotones);
+
+
+    // Actualiza el total al cargar
+    
+   
+    if (carrito.length === 0) {
+        contenedorItems.innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
+        return;
+    }
 });
 
 function finalizarCompra() {
-    localStorage.removeItem("carrito");
     const contenedorItems = document.querySelector(".items");
+    localStorage.removeItem("carrito");
     contenedorItems.innerHTML = '<p class="agradecimiento">Gracias por su compra! :)</p>';
     actualizarCantidadDeLibros();
-    eliminarTotal();
+    setTimeout(() => {
+        // Eliminar el total si existe
+        eliminarTotal();
+
+        // Vaciar el contenedor de productos
+        contenedorItems.innerHTML = '<p class="sin-items">El carrito está vacío.</p>';
+        
+        // Actualizar la cantidad de libros (que ahora será 0)
+        actualizarCantidadDeLibros();
+    }, 10000000);  // 1000 ms de retraso (1 segundo)
 }
+
+
 
 function vaciarCarrito() {
     localStorage.removeItem("carrito");
@@ -95,7 +95,7 @@ function actualizarCantidadDeLibros() {
 function mostrarTotal() {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const precioTotal = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
-    
+
     const contenedorItems = document.querySelector(".items");
 
     const totalElemento = document.createElement("div");
@@ -115,5 +115,68 @@ function eliminarTotal() {
     const totalExistente = contenedorItems.querySelector(".total-container");
     if (totalExistente) {
         totalExistente.remove();
+    }
+}
+
+function agregarProducto(id) {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    const producto = carrito.find((producto) => producto.id == id);
+    if (producto) {
+        producto.cantidad++;
+        producto.precio = producto.precio / (producto.cantidad - 1) * producto.cantidad; // Recalcular precio
+
+        // Guarda el carrito actualizado en el localStorage
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+
+        // Actualiza la cantidad en el DOM
+        const cantidadElemento = document.querySelector(`[data-id="${id}"] .cantidad-producto`);
+        cantidadElemento.innerHTML = `${producto.cantidad}`;
+
+        actualizarCantidadDeLibros();
+        mostrarTotal();
+    }
+}
+
+function quitarProducto(id) {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    const producto = carrito.find((producto) => producto.id == id);
+    if (producto) {
+        if (producto.cantidad > 1) {
+            producto.cantidad--;
+            producto.precio = producto.precio / (producto.cantidad + 1) * producto.cantidad; // Recalcular precio
+        } else {
+            eliminarProductoSiCantidadCero(id);
+            return;
+        }
+
+        // Guarda el carrito actualizado en el localStorage
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+
+        // Actualiza la cantidad en el DOM
+        const cantidadElemento = document.querySelector(`[data-id="${id}"] .cantidad-producto`);
+        cantidadElemento.innerHTML = `${producto.cantidad}`;
+
+        actualizarCantidadDeLibros();
+        mostrarTotal();
+    }
+}
+
+function eliminarProductoSiCantidadCero(id) {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    const productoIndex = carrito.findIndex((producto) => producto.id == id);
+    if (productoIndex !== -1) {
+        carrito.splice(productoIndex, 1);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+
+        const productoElemento = document.querySelector(`[data-id="${id}"]`);
+        if (productoElemento) {
+            productoElemento.remove();
+        }
+
+        actualizarCantidadDeLibros();
+        mostrarTotal();
     }
 }
